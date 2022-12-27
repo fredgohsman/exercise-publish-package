@@ -8,7 +8,7 @@ on:
   
 permissions:
   contents: read
-  packages: read
+  packages: write
 
 jobs:
   build:
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://npm.pkg.github.com
       
       - name: install dependencies
         run: |
