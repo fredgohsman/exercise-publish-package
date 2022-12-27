@@ -1,1 +1,3 @@
-console.log("hello world");
+exports.helloWorld = () => {
+  console.log("hello world")
+}
